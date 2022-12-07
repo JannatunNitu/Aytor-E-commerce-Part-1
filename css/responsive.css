@@ -1,0 +1,86 @@
+
+@media (min-width:992px) and (max-width:1199px){
+    #banner .bannerSlider .bannerCnt h2 {
+        font-size: 40px;
+        line-height: 25px;
+
+    }
+    #banner .slick-dots {
+        bottom: 8%;
+        left: 22px;
+    }    
+}
+
+@media (min-width:768px) and (max-width:991px){
+    #banner .bannerSlider {
+        height: 500px;
+    }
+    #banner .bannerSlider .row {
+        height: 500px;
+    }
+    #banner .bannerSlider .bannerCnt h2 {
+        font-size: 40px;
+        line-height: 20px;
+
+    }
+    .button {
+        padding: 12px 17px;
+    }
+    #banner .bannerSlider .bannerCnt a {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #banner .slick-dots {
+        bottom: 8%;
+        left: 32px;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px){
+    #banner .bannerSlider {
+        height: 200px;
+    }
+    #banner .bannerSlider .row {
+        height: 200px;
+    }
+    #banner .bannerSlider .bannerCnt {
+        width: 100%;
+    }
+    #banner .bannerSlider .bannerCnt h2 {
+        font-size: 23px;
+        line-height: 10px;
+        padding: 7px 0 3px 0;
+    }
+    #banner .bannerSlider .bannerCnt p {
+        font-size: 12px;
+        width: 186px;
+        padding-bottom: 4px;
+    }
+    #banner .bannerSlider .button {
+        padding: 3px 3px;
+    }
+    #banner .bannerSlider .bannerCnt a {
+        font-size: 9px;
+        line-height: 20px;
+    }
+    #banner .slick-dots button {
+        width: 6px;
+        height: 4px;
+    }
+    #banner .slick-dots .slick-active button {
+        width: 15px;
+    }
+    #banner .slick-dots li {
+        margin: 0 1px;
+    }
+    #banner .slick-dots {
+        bottom: -12px;
+        left: 11px;
+    }
+    #categories {
+        padding: 20px 0;
+    }
+    #categories .category_card {
+        margin-bottom: 20px;
+    }
+}

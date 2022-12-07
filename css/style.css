@@ -1,0 +1,232 @@
+/* Common css starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,span,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primaryFont:'Josefin Sans', sans-serif;
+    --secondaryFont:'Roboto', sans-serif;
+    --primaryColor:#FF6F61;
+    --secondaryColor:#1D1D1D;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.button{
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 20px 42px;
+    display: inline-block;
+}
+/* Common css ends here */
+
+
+/* Nav bar starts here */
+#Navbar ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #11161E;
+    padding: 42px 16px;
+}
+#Navbar ul li a:hover{
+    color: var(--primaryColor);
+}
+
+nav .navIcons ul li{
+    display: inline-block;
+}
+nav .navIcons ul li a{
+    font-size: 24px;
+    padding: 0 10px;
+    color: #11161E;
+    position: relative;
+}
+nav .navIcons ul li a .overlay{
+    width: 15px;
+    height: 15px;
+    background-color: var(--primaryColor);
+    position: absolute;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+nav .togglebtn{
+    border: none;
+    outline: none;
+    background-color:transparent;
+    font-size: 30px;
+    padding: 0 25px;
+}
+nav .toggleLogo{
+    width: 100px;
+    margin-top:30px;
+}
+
+nav .offcanvas-body .smallMenu li a{
+    color: #11161E;
+    font-size: 20px;
+    border-bottom:1px solid rgb(192, 192, 192) ;
+    padding: 10px 20px;
+    display: block;
+}
+nav .offcanvas-body .smallMenu .navIcons{
+    margin-top: 30px;
+}
+nav .offcanvas-body .smallMenu .navIcons ul li a{
+    border: none;
+}
+/* Nav bar ends here */
+
+/* Banner section starts here */
+#banner{
+    position: relative;
+}
+#banner .bannerSlider{
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#banner .bannerSlider .row{
+    height: 550px;
+}
+#banner .bannerSlider .bannerCnt{
+    width: 45%;
+}
+#banner .bannerSlider .bannerCnt h3{
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--secondaryColor);
+    
+}
+#banner .bannerSlider .bannerCnt > *{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.9s ease;
+}
+#banner .bannerSlider.slick-active .bannerCnt > *{
+    transform: translateX(0px);
+    opacity: 1;
+}
+#banner .bannerSlider .bannerCnt h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: var(--secondaryColor);
+    padding: 32px 0 26px 0;
+    transition-delay: 0.2s;
+}
+#banner .bannerSlider .bannerCnt p{
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--secondaryColor);
+    padding-bottom:40px ;
+    transition-delay: 0.4s;
+}
+#banner .bannerSlider .bannerCnt a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    transition-delay: 0.8s;
+}
+#banner .bannerSlider .bannerCnt a span{
+    margin-left: 10px;
+    transition: 0.4ms;
+}
+#banner .bannerSlider .bannerCnt a:hover span{
+    opacity: 0;
+    visibility: hidden;
+}
+#banner .slick-dots{
+    position: absolute;
+    bottom: 10%;
+    left: 110px;
+}
+#banner .slick-dots li{
+    display: inline-block;
+    margin: 0 6px;
+}
+#banner .slick-dots button{
+    border: none;
+    outline: none;
+    width: 25px;
+    height: 12px;
+    color: transparent;
+    border-radius: 6px;
+}
+#banner .slick-dots .slick-active button{
+   width: 40px;
+   background-color: var(--primaryColor);
+}
+/* Banner section ends here */
+
+/* Categories section starts here  */
+#categories{
+    padding: 100px 0;
+}
+#categories .category_card img{
+    width: 100%;
+    display: block;
+}
+#categories .category_card:nth-child(1){
+    margin-bottom: 20px;
+}
+#categories .category_card{
+    position: relative;
+}
+#categories .category_card .overlay{
+    background-color:  rgb(17, 22, 30,0.4);
+    position: absolute;
+    inset: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+#categories .category_card:hover .overlay{
+    opacity: 1;
+}
+#categories .category_card .overlay h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20%;
+    transform: translateY(-30%);
+}
+#categories .category_card .overlay a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    
+}
+#categories .category_card .overlay a span{
+    margin-left: 10px;
+
+}
+/* Categories section ends here */
